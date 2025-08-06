@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About | Insurance Charges Predictor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #86b0db;
+    }
+    .about-section {
+      background: rgb(224, 112, 112);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-top: 50px;
+    }
+    footer {
+      background: #343a40;
+      color: rgb(0, 90, 2);
+      padding: 15px 0;
+      text-align: center;
+      margin-top: 50px;
+    }
+    h1, h4 {
+      color: #0072ff;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">Insurance Predictor</a>
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+      <li class="nav-item active"><a class="nav-link" href="/about">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="/predict">Predict</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- About Content -->
+<div class="container">
+  <div class="about-section">
+    <h1 class="text-center mb-4">About This Project</h1>
+    
+    <p class="lead">
+      The <strong>Insurance Charges Predictor</strong> is a machine learning-powered web application that predicts estimated medical insurance costs based on user-provided inputs like age, gender, BMI, smoking habits, and more.
+    </p>
+
+    <hr>
+
+    <h4>🔍 Why this App?</h4>
+    <p>
+      Medical insurance pricing can be complex and unclear. This app simplifies it using data-driven models, helping users make informed financial and healthcare decisions.
+    </p>
+
+    <h4>⚙️ How it Works</h4>
+    <ul>
+      <li>Users input details like age, sex, BMI, number of children, smoker status, and region.</li>
+      <li>The data is processed through a trained ML model (e.g., Linear Regression).</li>
+      <li>The model predicts estimated charges based on historical patterns.</li>
+    </ul>
+
+    <h4>🧠 Tech Stack</h4>
+    <ul>
+      <li><strong>Frontend:</strong> HTML5, CSS3, Bootstrap</li>
+      <li><strong>Backend:</strong> Flask (Python)</li>
+      <li><strong>Machine Learning:</strong> Scikit-learn, Pandas</li>
+      <li><strong>Deployment:</strong> Flask Server with Joblib Model</li>
+    </ul>
+
+    <p class="text-muted mt-4">
+      🚀 This project bridges machine learning with real-world application — bringing insights directly to users in a simple and intuitive interface.
+    </p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Insurance Charges Predictor | Built with ❤️ using Python & ML</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction Result</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .result-box {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      max-width: 600px;
+      width: 100%;
+    }
+    .result-box h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 25px;
+      color: #343a40;
+    }
+    .result-text {
+      font-size: 32px;
+      color: #0072ff;
+      font-weight: 600;
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand mx-auto" href="/">Insurance Charges Predictor</a>
+</nav>
+
+<!-- Result Container -->
+<div class="container mt-5 mb-5">
+  <div class="result-box">
+    <h2>Your Predicted Insurance Charges Are:</h2>
+    <div class="result-text">₹{{ prediction }}</div>
+
+    <a href="/predict" class="btn btn-primary mt-4">Try Again</a>
+    <a href="/" class="btn btn-secondary mt-2">Home</a>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Insurance Charges Predictor | Powered by Flask & ML</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
